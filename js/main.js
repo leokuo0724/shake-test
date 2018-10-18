@@ -1,13 +1,17 @@
 let counts = 0;
 
 //listen to shake event
-var shakeEvent = new Shake({threshold: 10});
+var shakeEvent = new Shake({threshold: 15});
 shakeEvent.start();
 window.addEventListener('shake', function(){
-    alert("Shaked");
+    // alert("Shaked");
     counts++;
-    $('#counter').html(counts);
+    $('#counts').html(counts);
 }, false);
+
+$('#counts').click(()=>{
+    alert('click!')
+});
 
 //stop listening
 function stopShake(){
