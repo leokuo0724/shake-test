@@ -4,7 +4,6 @@ let counts = 0;
 var shakeEvent = new Shake({threshold: 15});
 shakeEvent.start();
 window.addEventListener('shake', function(){
-    // alert("Shaked");
     counts++;
     $('#counts').html(counts);
 }, false);
