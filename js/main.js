@@ -1,7 +1,7 @@
 let counts = 0;
 
 //listen to shake event
-var shakeEvent = new Shake({threshold: 5});
+var shakeEvent = new Shake({threshold: 0.5});
 shakeEvent.start();
 window.addEventListener('shake', function(){
     counts++;
